@@ -48,7 +48,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: abdddev/taski_frontend:latest
+          tags: abludenov/taski_frontend:latest
   tests:
     runs-on: ubuntu-latest
     services:
@@ -127,7 +127,7 @@ jobs:
           # В параметре tags задаётся название и тег для образа.
           # Для каждого пересобранного образа
           # устанавливаем тег latest, чтобы потом
-          tags: abdddev/taski_backend:latest
+          tags: abludenov/taski_backend:latest
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
     runs-on: ubuntu-latest
@@ -147,4 +147,4 @@ jobs:
           context: ./gateway/
           push: true
           # Тут вместо username должен быть ваш логин на Docker Hub
-          tags: abdddev/taski_gateway:latest
+          tags: abludenov/taski_gateway:latest
